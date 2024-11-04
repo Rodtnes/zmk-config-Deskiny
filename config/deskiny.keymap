@@ -17,8 +17,8 @@
 
         ALPHA {
             bindings = <
-&kp LSHFT         &kp Q  &kp W  &kp F           &kp P         &kp B                                     &kp J            &kp L      &kp U      &kp Y    &kp LA(Z)  &kp LA(W)
-&kp LEFT_CONTROL  &kp A  &kp R  &kp S           &kp T         &kp G                                     &kp M            &kp N      &kp E      &kp I    &kp O      &kp LA(L)
+&kp LSHFT         &kp Q  &kp W  &kp F           &kp P         &kp B                                     &kp J            &kp L      &kp U      &kp Y    &kp RA(Z)  &kp RA(W)
+&kp LEFT_CONTROL  &kp A  &kp R  &kp S           &kp T         &kp G                                     &kp M            &kp N      &kp E      &kp I    &kp O      &kp RA(L)
                   &kp Z  &kp X  &kp C           &kp D         &kp V                                     &kp K            &kp H      &kp COMMA  &kp DOT  &kp MINUS
                                 &lt 4 LEFT_GUI  &lt 1 DELETE  &kp SPACE  &mt LEFT_ALT ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
             >;
