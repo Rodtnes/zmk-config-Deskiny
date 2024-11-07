@@ -10,10 +10,10 @@
 
         ALPHA {
             bindings = <
-&kp LSHFT         &kp Q  &kp W  &kp F  &kp P           &kp B                                     &kp J            &kp L      &kp U      &kp Y    &kp RA(Z)  &kp RA(W)
-&kp LEFT_CONTROL  &kp A  &kp R  &kp S  &kp T           &kp G                                     &kp M            &kp N      &kp E      &kp I    &kp O      &kp RA(L)
-                  &kp Z  &kp X  &kp C  &kp D           &kp V                                     &kp K            &kp H      &kp COMMA  &kp DOT  &kp MINUS
-                                &mo 4  &lt 1 LEFT_GUI  &kp SPACE  &mt LEFT_ALT ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
+&kp LSHFT         &kp Q  &kp W  &kp F  &kp P         &kp B                                     &kp J            &kp L      &kp U      &kp Y    &kp RA(Z)  &kp RA(W)
+&kp LEFT_CONTROL  &kp A  &kp R  &kp S  &kp T         &kp G                                     &kp M            &kp N      &kp E      &kp I    &kp O      &kp RA(L)
+                  &kp Z  &kp X  &kp C  &kp D         &kp V                                     &kp K            &kp H      &kp COMMA  &kp DOT  &kp MINUS
+                                &mo 4  &kp LEFT_GUI  &kp SPACE  &mt LEFT_ALT ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
             >;
         };
 
@@ -28,8 +28,8 @@
 
         SYM {
             bindings = <
-&trans  &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                  &kp LBRC  &kp RBRC  &kp MINUS     &kp EQUAL  &kp RA(DOUBLE_QUOTES)  &kp GRAVE
-&trans  &kp AMPERSAND    &kp PERCENT       &kp LS(NUMBER_6)  &kp SEMICOLON      &kp COLON                        &kp LPAR  &kp RPAR  &kp PLUS      &kp STAR   &kp RA(SQT)            &kp DOLLAR
+&trans  &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                  &kp LBRC  &kp RBRC  &kp MINUS     &kp EQUAL  &kp DOUBLE_QUOTES  &kp GRAVE
+&trans  &kp AMPERSAND    &kp PERCENT       &kp LS(NUMBER_6)  &kp SEMICOLON      &kp COLON                        &kp LPAR  &kp RPAR  &kp PLUS      &kp STAR   &kp SQT            &kp DOLLAR
         &kp EXCLAMATION  &kp AT_SIGN       &kp HASH          &kp PIPE           &kp TILDE                        &kp LBKT  &kp RBKT  &kp QUESTION  &kp BSLH   &kp AMPERSAND
                                            &trans            &trans             &trans           &trans  &trans  &trans    &trans    &trans
             >;
