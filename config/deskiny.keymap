@@ -30,7 +30,7 @@
 #define DK_LBKT &kp RA(N8)          // [
 #define DK_RBKT &kp RA(N9)          // ]
 #define DK_QST  &kp LS(MINUS)        // ?
-#define DK_BSLS &kp RA(NON_US_BSLH) // \
+#define DK_BSLS &kp RA(NON_US_BSLH) //
 #define DK_GRV  &kp LS(EQUAL)       // `
 #define DK_DOLR &kp RA(N4)          // $
 
