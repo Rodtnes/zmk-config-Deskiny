@@ -1,4 +1,4 @@
-#include "Deskiny.dtsi"
+#include "deskiny.dtsi"
 
 &default_kscan {
         col-gpios 
