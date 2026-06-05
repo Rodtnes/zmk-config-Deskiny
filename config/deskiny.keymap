@@ -48,7 +48,7 @@
                                 &mo 4  &mt LEFT_GUI DELETE  &kp SPACE  &mt LEFT_ALT ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
             >;
         };
-/*
+
         NAV {
             bindings = <
 &kp LSHFT  &none  &none  &none          &none   &none                    &kp HOME        &kp PAGE_DOWN         &kp PG_UP             &kp END                &none  &none
@@ -57,7 +57,6 @@
                          &trans         &trans  &trans  &trans   &trans  &trans          &trans                &trans
             >;
         };
-        */
 /*
         SYM {
             bindings = <
