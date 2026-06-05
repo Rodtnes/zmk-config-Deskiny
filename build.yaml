@@ -19,6 +19,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: Deskiny_left
+    shield: deskiny_left
   - board: seeeduino_xiao_ble
-    shield: Deskiny_right
+    shield: deskiny_right
