@@ -3,36 +3,36 @@
 #include <dt-bindings/zmk/keys.h>
 
 /* DANISH LAYOUT ALIASES FOR LINUX OS */
-#define DK_AA   &kp LBKT            // Å
-#define DK_AE   &kp SEMI            // Æ
-#define DK_OO   &kp APOS            // Ø
-#define DK_MINS &kp SLASH           // -
-#define DK_PLUS &kp MINUS           // +
-#define DK_EQL  &kp LS(N0)          // =
-#define DK_SLSH &kp LS(N7)          // /
-#define DK_ASTR &kp LS(BSLS)        // *
-#define DK_SQT  &kp BSLS            // '
-#define DK_DQOT &kp LS(N2)          // "
-#define DK_AMPR &kp LS(N6)          // &
-#define DK_PERC &kp LS(N5)          // %
-#define DK_C_RT &kp LS(RBKT)        // ^
-#define DK_SCLN &kp LS(COMMA)       // ;
-#define DK_COLN &kp LS(DOT)         // :
-#define DK_LPAR &kp LS(N8)          // (
-#define DK_RPAR &kp LS(N9)          // )
-#define DK_EXCL &kp LS(N1)          // !
-#define DK_AT   &kp RA(N2)          // @
-#define DK_HASH &kp LS(N3)          // #
-#define DK_PIPE &kp RA(EQUAL)       // |
-#define DK_TILD &kp RA(RBKT)        // ~
-#define DK_LBRC &kp RA(N7)          // {
-#define DK_RBRC &kp RA(N0)          // }
-#define DK_LBKT &kp RA(N8)          // [
-#define DK_RBKT &kp RA(N9)          // ]
-#define DK_QST  &kp LS(MINUS)        // ?
-#define DK_BSLS &kp RA(NON_US_BSLH) //
-#define DK_GRV  &kp LS(EQUAL)       // `
-#define DK_DOLR &kp RA(N4)          // $
+#define DK_AA   &kp LBKT
+#define DK_AE   &kp SEMI
+#define DK_OO   &kp APOS            
+#define DK_MINS &kp SLASH           
+#define DK_PLUS &kp MINUS           
+#define DK_EQL  &kp LS(N0)          
+#define DK_SLSH &kp LS(N7)          
+#define DK_ASTR &kp LS(BSLS)        
+#define DK_SQT  &kp BSLS            
+#define DK_DQOT &kp LS(N2)          
+#define DK_AMPR &kp LS(N6)          
+#define DK_PERC &kp LS(N5)          
+#define DK_C_RT &kp LS(RBKT)        
+#define DK_SCLN &kp LS(COMMA)       
+#define DK_COLN &kp LS(DOT)         
+#define DK_LPAR &kp LS(N8)          
+#define DK_RPAR &kp LS(N9)          
+#define DK_EXCL &kp LS(N1)          
+#define DK_AT   &kp RA(N2)          
+#define DK_HASH &kp LS(N3)          
+#define DK_PIPE &kp RA(EQUAL)       
+#define DK_TILD &kp RA(RBKT)        
+#define DK_LBRC &kp RA(N7)          
+#define DK_RBRC &kp RA(N0)          
+#define DK_LBKT &kp RA(N8)          
+#define DK_RBKT &kp RA(N9)          
+#define DK_QST  &kp LS(MINUS)       
+#define DK_BSLS &kp RA(NON_US_BSLH)
+#define DK_GRV  &kp LS(EQUAL)       
+#define DK_DOLR &kp RA(N4)          
 
 / {
     combos { compatible = "zmk,combos"; };
