@@ -10,8 +10,8 @@
 #define DK_PLUS &kp MINUS
 #define DK_EQL  &kp LS(N0)
 #define DK_SLSH &kp LS(N7)
-#define DK_ASTR &kp LS(BSLS)
-#define DK_SQT  &kp BSLS
+#define DK_ASTR &kp LS(BSLH)
+#define DK_SQT  &kp BSLH
 #define DK_DQOT &kp LS(N2)
 #define DK_AMPR &kp LS(N6)
 #define DK_PERC &kp LS(N5)
@@ -61,8 +61,7 @@
         SYM {
             bindings = <
 &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            DK_LBRC  DK_RBRC  DK_MINS  DK_EQL   DK_DQOT  DK_GRV
-/*&trans  DK_AMPR     DK_PERC           DK_C_RT     DK_SCLN            DK_COLN                    DK_LPAR  DK_RPAR  DK_PLUS  DK_ASTR  DK_SQT   DK_DOLR */
-&none &none &none &none &none &none &none &none &none &none &none &none   
+&trans  DK_AMPR     DK_PERC           DK_C_RT     DK_SCLN            DK_COLN                    DK_LPAR  DK_RPAR  DK_PLUS  DK_ASTR  DK_SQT   DK_DOLR
         DK_EXCL     DK_AT             DK_HASH     DK_PIPE            DK_TILD                    DK_LBKT  DK_RBKT  DK_QST   DK_BSLS  DK_AMPR
                                       &trans      &trans             &trans           &trans    &trans   &trans   &trans   &trans
             >;
