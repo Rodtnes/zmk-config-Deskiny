@@ -16,7 +16,7 @@
 #define DK_AMPR &kp LS(N6)
 #define DK_PERC &kp LS(N5)
 #define DK_C_RT &kp LS(RBKT)
-#define DK_SCLN &kp LS(COMMA) 
+#define DK_SCLN &kp LS(COMMA)
 #define DK_COLN &kp LS(DOT)
 #define DK_LPAR &kp LS(N8)
 #define DK_RPAR &kp LS(N9)
@@ -33,6 +33,17 @@
 #define DK_BSLS &kp RA(NON_US_BSLH)
 #define DK_GRV  &kp LS(EQUAL)
 #define DK_DOLR &kp RA(N4)
+#define DK_UNDS &kp LS(SLASH)
+
+#define DK_LABK &kp NON_US_BSLH
+#define DK_RABK &kp LS(NON_US_BSLH)
+#define ALPHA 0
+#define NAV   1
+#define SYM   2
+#define NUM   3
+#define FUN   4
+#define MEDIA 5
+
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -42,45 +53,53 @@
 
         ALPHA {
             bindings = <
-&kp LSHFT         &kp Q  &kp W  &kp E  &kp R                &kp T                                     &kp Y            &kp U      &kp I      &kp O    &kp P    &kp LBKT
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D  &kp F                &kp G                                     &kp H            &kp J      &kp K      &kp L    &kp SEMI    DK_OO
-                  &kp Z  &kp X  &kp C  &kp V                &kp B                                     &kp N            &kp M      &kp COMMA  &kp DOT  DK_MINS
-                                &mo 4  &mt LEFT_GUI DELETE  &kp SPACE  &mt LEFT_ALT ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
+&kp LSHFT         &kp B  &kp R  &kp L  &kp D                &kp J                                     DK_DQOT          &kp Y      &kp O      &kp U      &kp SEMI    &kp LBKT
+&kp LEFT_CONTROL  &kp S  &kp N  &kp H  &kp T                &kp K                                     &kp W            &kp C      &kp A      &kp E      &kp I       DK_OO
+                  &kp X  &kp M  &kp P  &kp V                &kp Z                                     &kp F            &kp G      &kp Q      &kp COMMA  &kp DOT
+                                &mo MEDIA  &mt LEFT_GUI DELETE  &lt NAV SPACE  &lt SYM ENTER  &lt NUM ESC  &lt SYM BACKSPACE  &lt NAV TAB  &mo FUN
             >;
         };
 
         NAV {
             bindings = <
 &kp LSHFT  &none  &none  &none          &none   &none                    &kp HOME        &kp PAGE_DOWN         &kp PG_UP             &kp END                &none  &none
-&kp LCTRL  &none  &none  &kp LS(LG(S))  &none   &none                    &kp LEFT        &kp DOWN              &kp UP                &kp RIGHT              &none  &none
-           &none  &none  &none          &none   &none                    &kp LG(LA(N1))  &kp LG(LA(N2))  &kp LG(LA(N3))  &kp LA(LG(N4))  &none
+&kp LCTRL  &none  &none  &none          &none   &none                    &kp LEFT        &kp DOWN              &kp UP                &kp RIGHT              &none  &none
+           &none  &none  &none          &none   &none                    &kp HOME        &kp PAGE_DOWN         &kp PG_UP             &kp END                &kp INSERT
                          &trans         &trans  &trans  &trans   &trans  &trans          &trans                &trans
             >;
         };
-        
+
         SYM {
             bindings = <
-&trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            DK_LBRC  DK_RBRC  DK_MINS  DK_EQL   DK_DQOT  DK_GRV
-&trans  DK_AMPR     DK_PERC           DK_C_RT     DK_SCLN            DK_COLN                    DK_LPAR  DK_RPAR  DK_PLUS  DK_ASTR  DK_SQT   DK_DOLR
-        DK_EXCL     DK_AT             DK_HASH     DK_PIPE            DK_TILD                    DK_LBKT  DK_RBKT  DK_QST   DK_BSLS  DK_AMPR
-                                      &trans      &trans             &trans           &trans    &trans   &trans   &trans   &trans
+&trans  DK_LBRC     DK_AMPR     DK_ASTR     DK_LPAR     DK_RPAR                             &none   &none       &none   &none       &none  &none
+&trans  DK_COLN     DK_DOLR     DK_PERC     DK_C_RT     DK_PLUS                             DK_QST  DK_SLSH     &none   DK_GRV      &none   &none
+        DK_TILD     DK_EXCL     DK_AT       DK_HASH     DK_PIPE                             &none   DK_LABK     DK_RABK  DK_UNDS    DK_MINS
+                                &trans      &trans      &trans           &trans    &trans   &trans    &trans    &trans
             >;
         };
         NUM {
             bindings = <
-&trans  DK_SLSH  &kp N7  &kp N8  &kp N9  DK_MINS                  DK_SLSH  &kp N7  &kp N8  &kp N9  DK_MINS  &none
-&trans  DK_ASTR  &kp N4  &kp N5  &kp N6  DK_PLUS                  DK_ASTR  &kp N4  &kp N5  &kp N6  DK_PLUS  &none
-        &kp N0   &kp N1  &kp N2  &kp N3  DK_EQL                   &kp N0   &kp N1  &kp N2  &kp N3  DK_EQL
-                         &trans  &trans  &trans   &trans  &trans  &trans   &trans  &trans
+&trans  DK_LBKT  &kp N7  &kp N8  &kp N9  DK_RBKT                  &none  &none  &none  &none  &none  &none
+&trans  DK_SCLN  &kp N4  &kp N5  &kp N6  DK_EQL                   &none  &none  &none  &none  &none  &none
+        DK_SQT   &kp N1  &kp N2  &kp N3  DK_BSLS                  &none  &none  &none  &none  &none
+                         &trans  &trans  &kp N0   &trans  &trans  &trans &trans &trans
             >;
         };
-        BL_FN {
+        FUN {
             bindings = <
-&bt BT_CLR      &none  &none  &none       &none       &bootloader                  &bootloader  &kp F1  &kp F2   &kp F3   &kp F4   &none
-&bt BT_CLR_ALL  &none  &none  &bt BT_PRV  &bt BT_NXT  &none                        &none        &kp F5  &kp F6   &kp F7   &kp F8   &none
-                &none  &none  &none       &none       &none                        &none        &kp F9  &kp F10  &kp F11  &kp F12
-                               &trans      &trans      &trans       &trans  &trans  &trans       &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &none  &none  &none  &none  &none  &none
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &none                  &none  &none  &none  &none  &none  &bootloader
+        &kp F10  &kp F1  &kp F2  &kp F3  &none                  &none  &none  &none  &none  &none
+                         &trans  &trans  &trans   &trans  &trans  &trans &trans &trans
+            >;
+        };
+        MEDIA {
+            bindings = <
+&none           &bt BT_CLR_ALL  &bt BT_CLR   &none       &none       &none                           &kp LC(Y)          &kp LC(V)           &kp LC(C)           &kp LC(X)   &kp LC(Z)   &none
+&bootloader     &none           &none        &bt BT_PRV  &bt BT_NXT  &none                           &kp C_PREV         &kp C_VOLUME_DOWN   &kp C_VOLUME_UP     &kp C_NEXT  &kp F8   &none
+                &none           &none        &none       &none       &none                           &none              &none               &none               &none       &none
+                                             &trans      &trans      &trans       &trans     &trans  &kp C_PLAY_PAUSE   &kp C_STOP          &kp C_MUTE
             >;
         };
     };
-}; 
+};
